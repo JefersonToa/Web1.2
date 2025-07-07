@@ -55,4 +55,45 @@ background-color: beige;
 .mi-fot{
 background-color: #EAE4D5;
 }
+@media (max-width: 900px) {
+  .autores {
+    padding: 40px;
+    gap: 15px;
+  }
+  .autores .tarjeta {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    font-size: 22px;
+  }
+  #autor {
+    font-size: 32px;
+  }
+  .texto {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+.autores {
+flex-direction: column;
+padding: 10px;
+gap: 10px;
+}
+.autores .tarjeta {
+flex: 1 1 100%;
+max-width: 100%;
+font-size: 18px;
+padding: 8px;
+}
+#autor {
+font-size: 24px;
+}
+.texto {
+font-size: 16px;
+padding: 8px;
+}
+.logo {
+font-size: 22px;
+}
+}
 }
