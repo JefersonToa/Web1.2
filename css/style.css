@@ -1,0 +1,42 @@
+.logo{
+color: #FF6F3C;
+font-size: 30px;
+}
+
+.mi-nav{
+background-color: #EAE4D5;
+margin-bottom: 10px;
+}
+
+.tituloBienvenido{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+color: #fbf9f9;
+font-size: 40px;
+}
+
+body{
+background-image: url(/imagenes/Portada.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-color: #f0f0f0;   
+
+}
+
+.contenedorCards{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+}
+
+.tituloGaleria{
+text-align: auto   ;
+margin-top: 20px;
+margin-bottom: 20px;
+color: #ffffff;
+font-size: 40px;
+}

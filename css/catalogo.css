@@ -1,0 +1,50 @@
+.logo{
+color: #FF6F3C;
+font-size: 30px;
+}
+
+.mi-nav{
+background-color: #EAE4D5;
+margin-bottom: 10px;
+}
+body{
+background-image: url(/imagenes/Portada.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-color: #f0f0f0;   
+
+.contenedorCards{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+}
+
+.card {
+width: 250px;
+height: 520px; 
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-color:beige;
+}
+
+.card img {
+width: 100%;
+height: 280px;
+object-fit: cover;
+display: block;
+margin: 0 auto;
+border-radius: 8px;
+}
+
+.titulo{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+color: #fbf9f9;
+font-size: 40px;
+}
+}

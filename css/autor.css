@@ -1,0 +1,56 @@
+.logo{
+color: #FF6F3C;
+font-size: 30px;
+}
+
+.mi-nav{
+background-color:#EAE4D5;
+margin-bottom: 10px;
+}
+
+body{
+background-image: url(/imagenes/Portada.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-color: #f0f0f0;   
+
+.texto{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+color: #090909;
+font-size: 30px;
+background-color: #FF6F3C;
+}
+
+.autores{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 80px;
+color: #000000;
+font-size: 30px;
+}
+
+.autores .tarjeta {
+flex: 0 0 calc(33.333% - 20px);
+max-width: calc(33.333% - 20px);
+padding: 10px;
+border-radius: 8px;
+align-items: center;
+}
+
+.tipo{
+  font-size: 20px;
+}
+
+#autor{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+color: #d45959;
+font-size: 40px;
+}
+}

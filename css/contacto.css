@@ -1,0 +1,55 @@
+.logo{
+color: #FF6F3C;
+font-size: 30px;
+}
+
+.mi-nav{
+background-color:#EAE4D5;
+margin-bottom: 10px;
+}
+
+body{
+background-image: url(/imagenes/Portada.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-color: #f0f0f0;   
+
+.formulario{
+text-align: center;
+margin-top: 60px;
+margin-bottom: 20px;
+color: rgb(253, 250, 250);
+font-size: 30px;
+}
+
+.formulario .boton{
+text-align: center;
+margin-top: 40px;
+margin-bottom: 60px;
+color: #000000;
+font-size: 30px;
+background-color: rgb(103, 146, 59);
+margin: auto;
+display: block;
+   
+}
+
+.formulario .input{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 30px;
+color: #000000;
+font-size: 20px;
+background-color: beige;
+}
+.formulario #mensaje{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 30px;
+color: #000000;
+font-size: 30px;
+background-color: beige;
+}
+
+}
