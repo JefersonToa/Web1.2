@@ -45,35 +45,29 @@
  <div>
       <h3 style="color: beige; font-family: 'Times New Roman', Times, serif; font-size: 40px; text-align: center;">Formulario de Contacto <i class="bi bi-telephone"></i></h3>
   
-      <div class="formulario">
-      <form action="#" method="post">
-        <label for="nombre">Ingrese sus nombres:</label>
-        <br>
-        <input class="input" type="text" id="nombre" name="nombre" required>
-        <br>
-         <label for="apellido">Ingrese sus apellidos:</label>
-        <br>
-        <input class="input" type="text" id="apellido" name="apellido">
-        <br>
-        <label for="telefono">Ingrese su telefono</label>
-        <br>
-        <input class="input" type="tel" id="telefono" placeholder="123-456-7890">
-        <br>
-        <label for="correo">Correo electrónico</label>
-        <br>
-        <input class="input" type="email" id="correo" name="correo" required>
-        <br>
-         <label for="password">Ingrese su contraseña</label>
-        <br>
-        <input class="input" type="password" id="password">
-        <br>
-        <label for="mensaje">Mensaje:</label>
-        <br>
-        <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea>
-        <br>
-        <button class="boton" type="submit">Enviar</button>
-      </form>
-      </div>
+      <div class="formulario" style="max-width: 400px; margin: 40px auto; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.15); padding: 32px 24px; border: 1px solid #e0e0e0;">
+  <form action="#" method="post">
+    <label for="nombre" style="font-weight: 600; color: #333;">Ingrese sus nombres:</label>
+    <input class="input" type="text" id="nombre" name="nombre" required style="width: 100%; margin-bottom: 16px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+
+    <label for="apellido" style="font-weight: 600; color: #333;">Ingrese sus apellidos:</label>
+    <input class="input" type="text" id="apellido" name="apellido" style="width: 100%; margin-bottom: 16px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+
+    <label for="telefono" style="font-weight: 600; color: #333;">Ingrese su teléfono:</label>
+    <input class="input" type="tel" id="telefono" placeholder="123-456-7890" style="width: 100%; margin-bottom: 16px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+
+    <label for="correo" style="font-weight: 600; color: #333;">Correo electrónico:</label>
+    <input class="input" type="email" id="correo" name="correo" required style="width: 100%; margin-bottom: 16px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+
+    <label for="password" style="font-weight: 600; color: #333;">Ingrese su contraseña:</label>
+    <input class="input" type="password" id="password" style="width: 100%; margin-bottom: 16px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+
+    <label for="mensaje" style="font-weight: 600; color: #333;">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" cols="30" required style="width: 100%; margin-bottom: 20px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;"></textarea>
+
+    <button class="boton" type="submit" style="width: 100%; background: #2563eb; color: #fff; font-weight: bold; border: none; border-radius: 8px; padding: 10px 0; transition: background 0.2s;">Enviar</button>
+  </form>
+</div>
 </div>
 
 <footer class="bg-white dark:bg-gray-800 rounded-lg shadow mt-8">
