@@ -45,4 +45,6 @@ font-size: 40px;
 background-color: #EAE4D5;
 }
 
-
+.imagen-galeria img {
+    border: 4px solid white;
+  }

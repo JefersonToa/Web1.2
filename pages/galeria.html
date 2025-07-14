@@ -7,12 +7,11 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <link rel="icon" href="/imagenes/book.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="/css/galeria.css">
+    <title>Galería</title>
 </head>
 <body>
-    
-<nav class="bg-white border-gray-200 dark:bg-gray-900 mi-nav">
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 mi-nav">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <i class="bi bi-book logo"></i>
@@ -45,94 +44,44 @@
     </div>
   </div>
 </nav>
+  <div class="flex flex-col items-center my-6 px-4">
+    <h3 class="text-3xl font-bold text-white dark:text-gray-700 mb-4">Galería</h3>
+    <label for="busqueda-imagenes" style="font-weight: 600; color: #333;">Buscar imagen por nombre:</label>
+<input type="text" id="busqueda-imagenes" name="busqueda-imagenes" placeholder="Buscar imagen por nombre (ej. galeria3, galeria9...)" required style="width: 100%; margin-bottom: 16px; padding: 8px; border-radius: 8px; border: 1px solid #ccc; outline: none;">
+<p id="mensaje-no-encontrado" class="mt-2 text-red-500 text-sm hidden">No se encontraron imágenes.</p>
 
-<div>
-    <h3 class="tituloBienvenido">Galería</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 mb-8" id="galeria">
+  <div class="imagen-galeria"><img src="/imagenes/galeria1.jpg" alt="galeria1" class="w-72 h-48 object-cover rounded-lg"></div>
+  <div class="imagen-galeria"><img src="/imagenes/galeria2.jpg" alt="galeria2" class="w-72 h-48 object-cover rounded-lg"></div>
+  <div class="imagen-galeria"><img src="/imagenes/galeria3.jpg" alt="galeria3" class="w-72 h-48 object-cover rounded-lg"></div>
+  <div class="imagen-galeria"><img src="/imagenes/galeria4.jpg" alt="galeria4" class="w-72 h-48 object-cover rounded-lg"></div>
+  <div class="imagen-galeria"><img src="/imagenes/galeria5.jpg" alt="galeria5" class="w-72 h-48 object-cover rounded-lg"></div>
+  <div class="imagen-galeria"><img src="/imagenes/galeria6.jpg" alt="galeria6" class="w-72 h-48 object-cover rounded-lg"></div>
+  <div class="imagen-galeria"><img src="/imagenes/galeria7.jpg" alt="galeria7" class="w-72 h-48 object-cover rounded-lg"></div>
+  <div class="imagen-galeria"><img src="/imagenes/galeria8.jpg" alt="galeria8" class="w-72 h-48 object-cover rounded-lg"></div>
+  <div class="imagen-galeria"><img src="/imagenes/galeria9.jpg" alt="galeria9" class="w-72 h-48 object-cover rounded-lg"></div>
+  <div class="imagen-galeria"><img src="/imagenes/galeria10.jpg" alt="galeria10" class="w-72 h-48 object-cover rounded-lg"></div>
+  <div class="imagen-galeria"><img src="/imagenes/galeria11.jpg" alt="galeria11" class="w-72 h-48 object-cover rounded-lg"></div>
+  <div class="imagen-galeria"><img src="/imagenes/galeria12.jpg" alt="galeria12" class="w-72 h-48 object-cover rounded-lg"></div>
 </div>
-
-
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-    <div class="grid gap-4">
-       <div>
-  <img class="w-72 h-48 object-cover rounded-lg" src="/imagenes/galeria.jpg" alt="galeria1">
-</div>
-<div>
-  <img class="w-72 h-48 object-cover rounded-lg" src="/imagenes/galeria1.jpg" alt="galeria2">
-</div>
-<div>
-  <img class="w-72 h-48 object-cover rounded-lg" src="/imagenes/galeria3.jpg" alt="galeria3">
-</div>
-
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="w-72 h-48 object-cover rounded-lg" src="/imagenes/galeria4.jpg" alt="galeria4">
-        </div>
-        <div>
-            <img class="w-72 h-48 object-cover rounded-lg" src="/imagenes/galeria5.jpg" alt="galeria5">
-        </div>
-        <div>
-            <img class="w-72 h-48 object-cover rounded-lg" src="/imagenes/galeria6.jpg" alt="galeria6">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="w-72 h-48 object-cover rounded-lg" src="/imagenes/galeria7.jpg" alt="galeria">
-        </div>
-        <div>
-            <img class="w-72 h-48 object-cover rounded-lg" src="/imagenes/galeria8.jpg" alt="galeria8">
-        </div>
-        <div>
-            <img class="w-72 h-48 object-cover rounded-lg" src="/imagenes/galeria9.jpg" alt="galeria9">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="w-72 h-48 object-cover rounded-lg" src="/imagenes/galeria10.jpg" alt="galeria10">
-        </div>
-        <div>
-            <img class="w-72 h-48 object-cover rounded-lg" src="/imagenes/galeria11.jpg" alt="galeria11">
-        </div>
-        <div>
-            <img class="w-72 h-48 object-cover rounded-lg" src="/imagenes/galeria12.jpg" alt="galeria12">
-        </div>
-    </div>
-</div>
-
-<footer class="bg-white dark:bg-gray-800 rounded-lg shadow mt-8 mi-fot">
-  <div class="max-w-screen-xl mx-auto px-4 py-8 md:flex md:justify-between md:items-center">
-    
-    <div class="mb-4 md:mb-0 flex items-center space-x-4">
-      <i class="bi bi-book logo"></i>
-      <span class="text-xl font-semibold text-gray-800 dark:text-white">Lecturas Eternas</span>
-    </div>
-    <ul class="flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 space-x-6">
-      <li>
-        <a href="https://www.facebook.com/?locale=es_LA" class="hover:underline flex items-center gap-1">
-          <i class="bi bi-facebook"></i> Facebook
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/" class="hover:underline flex items-center gap-1">
-          <i class="bi bi-instagram"></i> Instagram
-        </a>
-      </li>
-      <li>
-        <a href="https://web.telegram.org/k/" class="hover:underline flex items-center gap-1">
-          <i class="bi bi-telegram"></i> Telegram
-        </a>
-      </li>
-      <li>
-        <a href="https://web.whatsapp.com/" class="hover:underline flex items-center gap-1">
-          <i class="bi bi-whatsapp"></i> WhatsApp
-        </a>
-      </li>
-    </ul>
   </div>
-
-  <div class="text-center text-sm text-gray-500 dark:text-gray-400 mt-4 pb-4">
-    © 2025 <strong>Letras  Vivas™</strong>. Todos los derechos reservados.
-  </div>
-</footer>
+  <footer class="bg-white dark:bg-gray-800 rounded-lg shadow mt-8 mi-fot">
+    <div class="max-w-screen-xl mx-auto px-4 py-8 md:flex md:justify-between md:items-center">
+      <div class="mb-4 md:mb-0 flex items-center space-x-4">
+        <i class="bi bi-book logo"></i>
+        <span class="text-xl font-semibold text-gray-800 dark:text-white">Lecturas Eternas</span>
+      </div>
+      <ul class="flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 space-x-6">
+        <li><a href="https://www.facebook.com/?locale=es_LA" class="hover:underline flex items-center gap-1"><i class="bi bi-facebook"></i> Facebook</a></li>
+        <li><a href="https://www.instagram.com/" class="hover:underline flex items-center gap-1"><i class="bi bi-instagram"></i> Instagram</a></li>
+        <li><a href="https://web.telegram.org/k/" class="hover:underline flex items-center gap-1"><i class="bi bi-telegram"></i> Telegram</a></li>
+        <li><a href="https://web.whatsapp.com/" class="hover:underline flex items-center gap-1"><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
+      </ul>
+    </div>
+    <div class="text-center text-sm text-gray-500 dark:text-gray-400 mt-4 pb-4">
+      © 2025 <strong>Letras Vivas™</strong>. Todos los derechos reservados.
+    </div>
+  </footer>
+<script src="/pages/js/galeria.js"></script>
 </body>
 </html>

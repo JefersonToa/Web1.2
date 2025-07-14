@@ -47,18 +47,18 @@
 </nav>
 
 <div>
-    <h3 class="tituloBienvenido">Bienvenido a Letras Vivas</h3>
+    <h3 class="tituloBienvenido font-bold text-white dark:text-gray-700 mb-4" >Bienvenido a Letras Vivas</h3>
 </div>
 <div class="contenedorCards">
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 cont">
     <a href="#">
-        <img class="rounded-t-lg" src="/imagenes/libro1.jpg" alt="libro 1" />
+        <img class="rounded-t-lg" src="/imagenes/libro1.jpg" alt="libro 1" id="img1" />
     </a>
     <div class="p-5">
         <a href="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Emocional</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Aquí los libros no solo se venden, se sienten.
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 ">Aquí los libros no solo se venden, se sienten.
 En nuestra tienda, cada estante es una puerta hacia nuevas realidades. Cada libro guarda una voz, una emoción, una aventura lista para ser descubierta. No solo ofrecemos literatura, ofrecemos experiencias que transforman, que conmueven y que dejan huella.
 
 📚 Creemos en el poder de las historias. En esas páginas que te hacen reír, llorar, soñar o recordar. No importa si buscas perderte en un mundo de fantasía, aprender algo nuevo, inspirarte o simplemente disfrutar de un momento de calma: en nuestra librería encontrarás ese título especial que parece haber estado esperándote.
@@ -68,9 +68,9 @@ Nuestro compromiso va más allá de la venta: queremos cultivar el amor por la l
     </div>
 </div>
 
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 cont1">
     <a href="#">
-        <img class="rounded-t-lg" src="/imagenes/libro2.jpg" alt="libro 2" />
+        <img class="rounded-t-lg" src="/imagenes/libro2.jpg" alt="libro 2" id="img2" />
     </a>
     <div class="p-5">
         <a href="#">
@@ -83,7 +83,7 @@ Nuestro compromiso va más allá de la venta: queremos cultivar el amor por la l
 </div>
 
 <div class="tituloGaleria">
-  <h1 id="galeria" class="text-3xl font-bold text-center my-6"><a href="/pages/galeria.html" class="text-orange-800 hover:underline"><strong>-Galería</strong></a></h1>
+  <h1 id="galeria" class="text-3xl font-bold text-center my-6"><a href="/pages/galeria.html" class="text-white dark:text-gray-800 hover:underline"><strong>-Galería</strong></a></h1>
 
 </div>
 <div class="w-full max-w-5xl mx-auto grid grid-cols-1  sm:grid-cols-2 md:grid-cols-4 gap-6 mb-6">
@@ -105,12 +105,12 @@ Nuestro compromiso va más allá de la venta: queremos cultivar el amor por la l
     Letras Vivas: Tu Biblioteca
   </h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 flex flex-col items-center text-center border border-blue-100 dark:border-gray-600">
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 flex flex-col items-center text-center border border-blue-100 dark:border-gray-600 contenedor">
       <i class="bi bi-bullseye text-orange-800 text-4xl mb-2"></i>
       <h3 class="font-bold text-lg text-orange-800 mb-2">Misión</h3>
       <p class="text-gray-700 dark:text-gray-200">Promover la lectura y el acceso a la cultura a través de libros y actividades educativas.</p>
     </div>
-    <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 flex flex-col items-center text-center border border-blue-100 dark:border-gray-600">
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 flex flex-col items-center text-center border border-blue-100 dark:border-gray-600 contenedor2">
       <i class="bi bi-people-fill text-orange-800 text-4xl mb-2"></i>
       <h3 class="font-bold text-lg text-orange-800 mb-2">Servicios</h3>
       <ul class="text-gray-700 dark:text-gray-200 list-disc list-inside text-left">
@@ -120,7 +120,7 @@ Nuestro compromiso va más allá de la venta: queremos cultivar el amor por la l
         <li>Acceso a recursos digitales</li>
       </ul>
     </div>
-    <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 flex flex-col items-center text-center border border-blue-100 dark:border-gray-600">
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 flex flex-col items-center text-center border border-blue-100 dark:border-gray-600 contenedor3">
       <i class="bi bi-book-half text-orange-800 text-4xl mb-2"></i>
       <h3 class="font-bold text-lg text-orange-800 mb-2">Catálogo</h3>
       <ul class="text-gray-700 dark:text-gray-200 list-disc list-inside text-left">
@@ -169,5 +169,6 @@ Nuestro compromiso va más allá de la venta: queremos cultivar el amor por la l
   </div>
 </footer>
 
+<script src="/pages/js/index.js"></script>
 </body>
 </html>
