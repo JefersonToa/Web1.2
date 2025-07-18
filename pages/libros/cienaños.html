@@ -29,40 +29,58 @@
     </nav>
 
     <main class="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700">
-        <div class="flex flex-col md:flex-row gap-8 items-center">
-            <img src="/imagenes/libro2.jpg" alt="Cien años de soledad" class="w-60 h-80 object-cover rounded-lg shadow-md border border-gray-300">
-            <div>
-                <h1 class="text-3xl font-bold text-orange-800 mb-2">Cien años de soledad</h1>
-                <h2 class="text-lg text-gray-700 dark:text-gray-200 mb-4">Gabriel García Márquez</h2>
-                <p class="text-gray-700 dark:text-gray-300 mb-4">Considerada una de las obras más importantes de la literatura hispanoamericana y universal, narra la historia de la familia Buendía a lo largo de siete generaciones en el mítico pueblo de Macondo. Con realismo mágico, Márquez explora el amor, la soledad, el poder y el destino.</p>
-                <ul class="mb-4 text-gray-700 dark:text-gray-200 list-disc list-inside">
-                    <li><span class="font-semibold">Género:</span> Novela, Realismo mágico</li>
-                    <li><span class="font-semibold">Año de publicación:</span> 1967</li>
-                    <li><span class="font-semibold">Páginas:</span> 471</li>
-                </ul>
-
-                <p class="text-2xl font-bold text-green-700 dark:text-white mb-4 text-center">$20.00</p>
-
-                <div class="comprar">
-                    <button class="btn-comprar" id="btn-comprar"><i class="bi bi-cart" style="margin-right: 8px;"></i>Comprar</button>
-                </div>
-
-                <a href="/pages/catalogo.html" class="inline-block mt-2 px-6 py-2 bg-orange-800 text-white rounded-lg font-semibold hover:bg-orange-900 transition">Volver al catálogo</a>
-            </div>
-        </div>
-
-        ---
-
-        <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Tu Carrito</h2>
-            <ul id="lista-carrito-items" class="space-y-4">
-                </ul>
-            <p id="totalCompra" class="text-xl font-bold text-gray-900 dark:text-white mt-4 text-right">
-                Total a pagar: $0.00
+    <div class="flex flex-col md:flex-row gap-8 items-center">
+        <img src="/imagenes/libro2.jpg" alt="Cien años de soledad" class="w-60 h-80 object-cover rounded-lg shadow-md border border-gray-300">
+        <div>
+            <h1 class="text-3xl font-bold text-orange-800 mb-2">Cien años de soledad</h1>
+            <h2 class="text-lg text-gray-700 dark:text-gray-200 mb-4">Gabriel García Márquez</h2>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+                Considerada una de las obras más importantes de la literatura hispanoamericana y universal, narra la historia de la familia Buendía a lo largo de siete generaciones en el mítico pueblo de Macondo. Con realismo mágico, Márquez explora el amor, la soledad, el poder, la muerte y el destino en una narrativa cargada de simbolismo.
             </p>
-        </div>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+                “Cien años de soledad” es una reflexión sobre la historia de América Latina, su violencia, sus utopías fallidas y su identidad. Su estilo único, cargado de elementos mágicos y cotidianos, rompió barreras entre lo real y lo fantástico, posicionando a García Márquez como una figura central del "Boom" latinoamericano.
+            </p>
 
-    </main>
+            <ul class="mb-4 text-gray-700 dark:text-gray-200 list-disc list-inside">
+                <li><span class="font-semibold">Género:</span> Novela, Realismo mágico</li>
+                <li><span class="font-semibold">Año de publicación:</span> 1967</li>
+                <li><span class="font-semibold">Páginas:</span> 471</li>
+            </ul>
+
+            <p class="text-2xl font-bold text-green-700 dark:text-white mb-4 text-center">$20.00</p>
+
+            <div class="comprar">
+                <button class="btn-comprar" id="btn-comprar">
+                    <i class="bi bi-cart" style="margin-right: 8px;"></i>Comprar
+                </button>
+            </div>
+
+            <a href="/pages/catalogo.html" class="inline-block mt-2 px-6 py-2 bg-orange-800 text-white rounded-lg font-semibold hover:bg-orange-900 transition">Volver al catálogo</a>
+        </div>
+    </div>
+
+    <section class="mt-10">
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Sobre el autor</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-2">
+            <strong>Gabriel García Márquez</strong> (1927–2014) fue un escritor, periodista y guionista colombiano, ampliamente considerado como uno de los más grandes escritores del siglo XX. Ganador del Premio Nobel de Literatura en 1982, su obra está profundamente influenciada por las historias de su abuela, la tradición oral del Caribe colombiano y los eventos sociales y políticos de América Latina.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 mb-2">
+            Su narrativa combina elementos fantásticos con la realidad histórica y social, una técnica que se conoce como <em>realismo mágico</em>. Además de “Cien años de soledad”, escribió novelas emblemáticas como <strong>“El amor en los tiempos del cólera”</strong>, <strong>“Crónica de una muerte anunciada”</strong> y <strong>“El otoño del patriarca”</strong>.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 mb-2">
+            Márquez fue también un firme defensor del periodismo como forma de resistencia y verdad. Fundó medios de comunicación, impulsó el nuevo periodismo latinoamericano y dejó un legado literario que sigue siendo estudiado en universidades de todo el mundo.
+        </p>
+    </section>
+
+    <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Tu Carrito</h2>
+        <ul id="lista-carrito-items" class="space-y-4"></ul>
+        <p id="totalCompra" class="text-xl font-bold text-gray-900 dark:text-white mt-4 text-right">
+            Total a pagar: $0.00
+        </p>
+    </div>
+</main>
+
     <footer class="bg-white dark:bg-gray-800 rounded-lg shadow mt-8">
         <div class="max-w-screen-xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center">
             <div class="mb-4 md:mb-0 flex items-center space-x-4">

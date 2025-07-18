@@ -40,35 +40,102 @@
     <li>
       <a href="/pages/contacto.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacto</a>
     </li>
-    <li>
-      <a href="/pages/carrito.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-        <i class="bi bi-cart-fill text-xl align-middle"></i>
-      </a>
-    </li>
   </ul>
 </div>
   </div>
 </nav>
   <div class="flex flex-col items-center my-6 px-4">
     <h3 class="text-3xl font-bold text-white dark:text-gray-700 mb-4">Galería</h3>
-    <label for="busqueda-imagenes" style="font-weight: 600; color: #333;">Buscar imagen por nombre:</label>
 <input type="text" id="busqueda-imagenes" name="busqueda-imagenes" placeholder="Buscar imagen por nombre (ej. galeria3, galeria9...)" required style="width: 100%; margin-bottom: 16px; padding: 8px; border-radius: 8px; border: 1px solid #ccc; outline: none;">
 <p id="mensaje-no-encontrado" class="mt-2 text-red-500 text-sm hidden">No se encontraron imágenes.</p>
 
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 mb-8" id="galeria">
-  <div class="imagen-galeria"><img src="/imagenes/galeria1.jpg" alt="galeria1" class="w-72 h-48 object-cover rounded-lg"></div>
-  <div class="imagen-galeria"><img src="/imagenes/galeria2.jpg" alt="galeria2" class="w-72 h-48 object-cover rounded-lg"></div>
-  <div class="imagen-galeria"><img src="/imagenes/galeria3.jpg" alt="galeria3" class="w-72 h-48 object-cover rounded-lg"></div>
-  <div class="imagen-galeria"><img src="/imagenes/galeria4.jpg" alt="galeria4" class="w-72 h-48 object-cover rounded-lg"></div>
-  <div class="imagen-galeria"><img src="/imagenes/galeria5.jpg" alt="galeria5" class="w-72 h-48 object-cover rounded-lg"></div>
-  <div class="imagen-galeria"><img src="/imagenes/galeria6.jpg" alt="galeria6" class="w-72 h-48 object-cover rounded-lg"></div>
-  <div class="imagen-galeria"><img src="/imagenes/galeria7.jpg" alt="galeria7" class="w-72 h-48 object-cover rounded-lg"></div>
-  <div class="imagen-galeria"><img src="/imagenes/galeria8.jpg" alt="galeria8" class="w-72 h-48 object-cover rounded-lg"></div>
-  <div class="imagen-galeria"><img src="/imagenes/galeria9.jpg" alt="galeria9" class="w-72 h-48 object-cover rounded-lg"></div>
-  <div class="imagen-galeria"><img src="/imagenes/galeria10.jpg" alt="galeria10" class="w-72 h-48 object-cover rounded-lg"></div>
-  <div class="imagen-galeria"><img src="/imagenes/galeria11.jpg" alt="galeria11" class="w-72 h-48 object-cover rounded-lg"></div>
-  <div class="imagen-galeria"><img src="/imagenes/galeria12.jpg" alt="galeria12" class="w-72 h-48 object-cover rounded-lg"></div>
+  <div class="imagen-galeria relative group">
+    <img src="/imagenes/galeria1.jpg" alt="galeria1" class="w-72 h-48 object-cover rounded-lg transition duration-300 group-hover:opacity-40">
+    <span class="absolute bottom-0 left-0 bg-black bg-opacity-80 text-white text-xs font-semibold px-2 py-1 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-300">
+      Fachada de una librería tradicional
+    </span>
+  </div>
+
+  <div class="imagen-galeria relative group">
+    <img src="/imagenes/galeria2.jpg" alt="galeria2" class="w-72 h-48 object-cover rounded-lg transition duration-300 group-hover:opacity-40">
+    <span class="absolute bottom-0 left-0 bg-black bg-opacity-80 text-white text-xs font-semibold px-2 py-1 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-300">
+      Libros antiguos organizados por temática
+    </span>
+  </div>
+
+  <div class="imagen-galeria relative group">
+    <img src="/imagenes/galeria3.jpg" alt="galeria3" class="w-72 h-48 object-cover rounded-lg transition duration-300 group-hover:opacity-40">
+    <span class="absolute bottom-0 left-0 bg-black bg-opacity-80 text-white text-xs font-semibold px-2 py-1 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-300">
+      Espacio de lectura con luz natural
+    </span>
+  </div>
+
+  <div class="imagen-galeria relative group">
+    <img src="/imagenes/galeria4.jpg" alt="galeria4" class="w-72 h-48 object-cover rounded-lg transition duration-300 group-hover:opacity-40">
+    <span class="absolute bottom-0 left-0 bg-black bg-opacity-80 text-white text-xs font-semibold px-2 py-1 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-300">
+      Estudiante concentrado leyendo un libro
+    </span>
+  </div>
+
+  <div class="imagen-galeria relative group">
+    <img src="/imagenes/galeria5.jpg" alt="galeria5" class="w-72 h-48 object-cover rounded-lg transition duration-300 group-hover:opacity-40">
+    <span class="absolute bottom-0 left-0 bg-black bg-opacity-80 text-white text-xs font-semibold px-2 py-1 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-300">
+      Mesa con libros y una taza de café
+    </span>
+  </div>
+
+  <div class="imagen-galeria relative group">
+    <img src="/imagenes/galeria6.jpg" alt="galeria6" class="w-72 h-48 object-cover rounded-lg transition duration-300 group-hover:opacity-40">
+    <span class="absolute bottom-0 left-0 bg-black bg-opacity-80 text-white text-xs font-semibold px-2 py-1 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-300">
+      Club de lectura reunido al aire libre
+    </span>
+  </div>
+
+  <div class="imagen-galeria relative group">
+    <img src="/imagenes/galeria7.jpg" alt="galeria7" class="w-72 h-48 object-cover rounded-lg transition duration-300 group-hover:opacity-40">
+    <span class="absolute bottom-0 left-0 bg-black bg-opacity-80 text-white text-xs font-semibold px-2 py-1 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-300">
+      Interior de una biblioteca moderna
+    </span>
+  </div>
+
+  <div class="imagen-galeria relative group">
+    <img src="/imagenes/galeria8.jpg" alt="galeria8" class="w-72 h-48 object-cover rounded-lg transition duration-300 group-hover:opacity-40">
+    <span class="absolute bottom-0 left-0 bg-black bg-opacity-80 text-white text-xs font-semibold px-2 py-1 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-300">
+      Niños explorando libros ilustrados
+    </span>
+  </div>
+
+  <div class="imagen-galeria relative group">
+    <img src="/imagenes/galeria9.jpg" alt="galeria9" class="w-72 h-48 object-cover rounded-lg transition duration-300 group-hover:opacity-40">
+    <span class="absolute bottom-0 left-0 bg-black bg-opacity-80 text-white text-xs font-semibold px-2 py-1 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-300">
+      Página antigua de una novela clásica
+    </span>
+  </div>
+
+  <div class="imagen-galeria relative group">
+    <img src="/imagenes/galeria10.jpg" alt="galeria10" class="w-72 h-48 object-cover rounded-lg transition duration-300 group-hover:opacity-40">
+    <span class="absolute bottom-0 left-0 bg-black bg-opacity-80 text-white text-xs font-semibold px-2 py-1 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-300">
+      Estantería de libros con iluminación cálida
+    </span>
+  </div>
+
+  <div class="imagen-galeria relative group">
+    <img src="/imagenes/galeria11.jpg" alt="galeria11" class="w-72 h-48 object-cover rounded-lg transition duration-300 group-hover:opacity-40">
+    <span class="absolute bottom-0 left-0 bg-black bg-opacity-80 text-white text-xs font-semibold px-2 py-1 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-300">
+      Jóvenes compartiendo recomendaciones de lectura
+    </span>
+  </div>
+
+  <div class="imagen-galeria relative group">
+    <img src="/imagenes/galeria12.jpg" alt="galeria12" class="w-72 h-48 object-cover rounded-lg transition duration-300 group-hover:opacity-40">
+    <span class="absolute bottom-0 left-0 bg-black bg-opacity-80 text-white text-xs font-semibold px-2 py-1 rounded-tr-lg opacity-0 group-hover:opacity-100 transition duration-300">
+      Portadas coloridas de libros nuevos
+    </span>
+  </div>
 </div>
+
+
   </div>
   <footer class="bg-white dark:bg-gray-800 rounded-lg shadow mt-8 mi-fot">
     <div class="max-w-screen-xl mx-auto px-4 py-8 md:flex md:justify-between md:items-center">
