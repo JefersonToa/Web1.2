@@ -16,7 +16,7 @@
 
     <nav class="bg-white border-gray-200 dark:bg-gray-900 mi-nav">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <i class="bi bi-book logo"></i>
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Librería</span>
             </a>
@@ -31,267 +31,241 @@
                 </svg>
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg mi-nav md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <ul class="font-medium flex flex-col md:flex-row md:items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg mi-nav md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="/index.html"
-                            class="block py-2 px-3 text-white mi-nav rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 "
-                            aria-current="page">Home</a>
+                        <a href="/index.html" class="block py-2 px-3 text-white mi-nav rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Home</a>
                     </li>
                     <li>
-                        <a href="/pages/catalogo.html"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Catálogo</a>
+                        <a href="#galeria" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Galería</a>
                     </li>
                     <li>
-                        <a href="/pages/autores.html"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Autores</a>
+                        <a href="/pages/catalogo.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Catálogo</a>
                     </li>
                     <li>
-                        <a href="/pages/contacto.html"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacto</a>
+                        <a href="/pages/autores.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Autores</a>
+                    </li>
+                    <li>
+                        <a href="/pages/contacto.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacto</a>
+                    </li>
+                    <li>
+                        <div class="relative group inline-block">
+                            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent flex items-center">
+                                <i class="bi bi-cart-fill text-xl align-middle"></i>
+                                <span id="cart-item-count" class="ml-1 text-sm font-semibold">0</span>
+                            </a>
+
+                          <div id="mini-cart-dropdown" class="absolute right-0 mt-2 w-72 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+    <div class="p-4 border-b border-gray-200 dark:border-gray-600">
+        <h4 class="text-lg font-bold text-gray-900 dark:text-white">Tu Carrito</h4>
+    </div>
+    <div id="mini-cart-items" class="p-2 max-h-60 overflow-y-auto">
+        <p id="mini-cart-empty-message" class="text-gray-600 dark:text-gray-300 text-center py-4">Carrito vacío</p>
+    </div>
+    <div id="mini-cart-summary" class="p-4 border-t border-gray-200 dark:border-gray-600 hidden">
+        <div class="flex justify-between items-center mb-3">
+            <span class="text-md font-semibold text-gray-800 dark:text-white">Total:</span>
+            <span id="mini-cart-total" class="text-md font-bold text-orange-700 dark:text-orange-400">$0.00</span>
+        </div>
+        <a href="/pages/carrito.html" class="block w-full text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Ver Carrito</a>
+    </div>
+</div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <div>
         <h1 class="titulo">Catálogo de libros</h1>
     </div>
+
     <div class="contenedorCards">
 
-        <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Por si un dia
-                        volvemos</h5>
+                <a href="../pages/libros/porsi.html">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Por si un dia volvemos</h5>
                 </a>
                 <div>
-                    <img src="/imagenes/1.jpg" alt="1" id="imagen">
+                    <img src="/imagenes/1.jpg" alt="Portada de Por si un dia volvemos" id="imagen">
                 </div>
                 <p class="font-normal text-gray-700 dark:text-gray-400">María Dueñas</p>
-                <a href="../pages/libros/porsi.html"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800">
+                <a href="../pages/libros/porsi.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800 mt-2">
                     Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                     </svg>
                 </a>
             </div>
         </div>
 
-        <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Nuestro lugar en el
-                        mundo</h5>
+                <a href="../pages/libros/nuestro.html">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Nuestro lugar en el mundo</h5>
                 </a>
                 <div>
-                    <img src="/imagenes/2.jpg" alt="2" id="imagen2">
+                    <img src="/imagenes/2.jpg" alt="Portada de Nuestro lugar en el mundo" id="imagen2">
                 </div>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Inma Rubiales</p>
-                <a href="../pages/libros/nuestro.html"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800">
+                <a href="../pages/libros/nuestro.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800 mt-2">
                     Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                     </svg>
                 </a>
             </div>
         </div>
 
-        <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Primer amor (Heart
-                        Bones)</h5>
+                <a href="/pages/libros/primerAmor.html">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Primer amor (Heart Bones)</h5>
                 </a>
                 <div>
-                    <img src="/imagenes/3.jpg" alt="3" id="imagen3">
+                    <img src="/imagenes/3.jpg" alt="Portada de Primer amor" id="imagen3">
                 </div>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Collen Hoover</p>
-                <a href="/pages/libros/primerAmor.html"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800">
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Colleen Hoover</p>
+                <a href="/pages/libros/primerAmor.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800 mt-2">
                     Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                     </svg>
                 </a>
             </div>
         </div>
 
-        <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Te receto un gato
-                        (Cat)</h5>
+                <a href="/pages/libros/teReceto.html">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Te receto un gato (Cat)</h5>
                 </a>
                 <div>
-                    <img src="/imagenes/4.jpg" alt="4" id="imagen4">
+                    <img src="/imagenes/4.jpg" alt="Portada de Te receto un gato" id="imagen4">
                 </div>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Syou Ishida</p>
-                <a href="/pages/libros/teReceto.html"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800">
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sui Ishida</p>
+                <a href="/pages/libros/teReceto.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800 mt-2">
                     Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                     </svg>
                 </a>
             </div>
         </div>
 
-        <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Las hermanas de
-                        Auschiwitz</h5>
+                <a href="/pages/libros/lasHermanas.html">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Las hermanas de Auschwitz</h5>
                 </a>
                 <div>
-                    <img src="/imagenes/5.jpg" alt="5" id="imagen5">
+                    <img src="/imagenes/5.jpg" alt="Portada de Las hermanas de Auschwitz" id="imagen5">
                 </div>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Roxane Van Iperen</p>
-                <a href="/pages/libros/lasHermanas.html"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800">
+                <a href="/pages/libros/lasHermanas.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800 mt-2">
                     Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                     </svg>
                 </a>
             </div>
         </div>
 
-        <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Las novelas de
-                        Berlín</h5>
+                <a href="/pages/libros/lasNovelas.html">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Las novelas de Berlín</h5>
                 </a>
                 <div>
-                    <img src="/imagenes/6.jpg" alt="6" id="imagen6">
+                    <img src="/imagenes/6.jpg" alt="Portada de Las novelas de Berlín" id="imagen6">
                 </div>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">V.S.Alexander</p>
-                <a href="/pages/libros/lasNovelas.html"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800">
+                <a href="/pages/libros/lasNovelas.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800 mt-2">
                     Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                     </svg>
                 </a>
             </div>
         </div>
 
-        <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Vírgenes y
-                        toxicómanos</h5>
+                <a href="/pages/libros/virgenes.html">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Vírgenes y toxicómanos</h5>
                 </a>
                 <div>
-                    <img src="/imagenes/7.jpg" alt="7" id="imagen7">
+                    <img src="/imagenes/7.jpg" alt="Portada de Vírgenes y toxicómanos" id="imagen7">
                 </div>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Mario Mendoza</p>
-                <a href="/pages/libros/virgenes.html"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800">
+                <a href="/pages/libros/virgenes.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800 mt-2">
                     Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                     </svg>
                 </a>
             </div>
         </div>
 
-        <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Mariposa azul
-                        cobalto</h5>
+                <a href="/pages/libros/mariposaAzul.html">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Mariposa azul cobalto</h5>
                 </a>
                 <div>
-                    <img src="/imagenes/8.jpg" alt="8" id="imagen8">
+                    <img src="/imagenes/8.jpg" alt="Portada de Mariposa azul cobalto" id="imagen8">
                 </div>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lilian Yaffe</p>
-                <a href="/pages/libros/mariposaAzul.html"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800">
+                <a href="/pages/libros/mariposaAzul.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800 mt-2">
                     Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                     </svg>
                 </a>
             </div>
         </div>
 
-        <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">The Half King, Rey
-                        entre sombras</h5>
+                <a href="/pages/libros/theHalf.html">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">The Half King, Rey entre sombras</h5>
                 </a>
                 <div>
-                    <img src="/imagenes/9.jpg" alt="9" id="imagen9">
+                    <img src="/imagenes/9.jpg" alt="Portada de The Half King" id="imagen9">
                 </div>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Melissa Landers</p>
-                <a href="/pages/libros/theHalf.html"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800">
+                <a href="/pages/libros/theHalf.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800 mt-2">
                     Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                     </svg>
                 </a>
             </div>
         </div>
 
-        <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 card">
             <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Cien años de
-                        soledad</h5>
+                <a href="../pages/libros/cienaños.html">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Cien años de soledad</h5>
                 </a>
                 <div>
-                    <img src="/imagenes/libro2.jpg" alt="libro2" id="imagen10">
+                    <img src="/imagenes/libro2.jpg" alt="Portada de Cien años de soledad" id="imagen10">
                 </div>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Gabriel García Márquez</p>
-                <a href="../pages/libros/cienaños.html"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-blue-800">
+                <a href="../pages/libros/cienaños.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-orange-500 hover:bg-orange-600 dark:focus:ring-blue-800 mt-2">
                     Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                     </svg>
                 </a>
             </div>
         </div>
+        
     </div>
+
     <footer class="bg-white dark:bg-gray-800 rounded-lg shadow mt-8 mi-fot">
         <div class="max-w-screen-xl mx-auto px-4 py-8 md:flex md:justify-between md:items-center">
-
             <div class="mb-4 md:mb-0 flex items-center space-x-4">
                 <i class="bi bi-book logo"></i>
                 <span class="text-xl font-semibold text-gray-800 dark:text-white">Lecturas Eternas</span>
@@ -325,7 +299,8 @@
         </div>
     </footer>
 
-    <script src="/js/catalogo.js"></script>
-</body>
 
+    <script src="/js/catalogo.js"></script>
+    
+</body>
 </html>

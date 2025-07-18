@@ -2,14 +2,10 @@ const inputNombre = document.getElementById("nombre");
 const inputEmail = document.getElementById("email");
 const inputMensaje = document.getElementById("mensaje");
 const btnEnviar = document.getElementById("botonEnviar");
-
 const errorNombre = document.getElementById("errorNombre");
 const errorEmail = document.getElementById("errorEmail");
 const errorMensaje = document.getElementById("errorMensaje");
-
 const formulario = document.getElementById("formulario");
-
-// Validar nombre
 const validarNombre = () => {
     if (inputNombre.value.trim() === "") {
         errorNombre.textContent = "El nombre es obligatorio.";
@@ -24,7 +20,6 @@ const validarNombre = () => {
     }
 }
 
-// Validar email
 const validarEmail = () => {
     const regexEmail = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
     if (!regexEmail.test(inputEmail.value)) {
@@ -40,7 +35,6 @@ const validarEmail = () => {
     }
 }
 
-// Validar mensaje
 const validarMensaje = () => {
     if (inputMensaje.value.trim().length < 10) {
         errorMensaje.textContent = "El mensaje debe tener mínimo diez caracteres.";
@@ -55,7 +49,6 @@ const validarMensaje = () => {
     }
 }
 
-// Validar todo el formulario
 const validarFormulario = () => {
     if (validarNombre() && validarEmail() && validarMensaje()) {
         btnEnviar.disabled = false;
@@ -64,7 +57,6 @@ const validarFormulario = () => {
     }
 }
 
-// Eventos en tiempo real
 inputNombre.addEventListener("input", () => {
     validarNombre();
     validarFormulario();
@@ -80,7 +72,6 @@ inputMensaje.addEventListener("input", () => {
     validarFormulario();
 });
 
-// Simular envío del formulario
 const mensajeExitoso = document.getElementById("registroExitoso");
 
 const enviarFormulario = async () => {
@@ -94,7 +85,6 @@ const enviarFormulario = async () => {
     btnEnviar.disabled = true;
 };
 
-// Evento submit
 formulario.addEventListener("submit", (e) => {
     e.preventDefault();
     enviarFormulario();

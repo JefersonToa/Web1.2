@@ -16,6 +16,33 @@ color: #fbf9f9;
 font-size: 40px;
 }
 
+.comprar{
+text-align: center;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 20px;
+color: #a31b1b;
+font-size: 30px;
+}
+
+.btn-comprar {
+background-color: orange;     
+color: white;
+padding: 12px 24px;
+font-size: 16px;
+font-weight: bold;
+border: none;
+border-radius: 12px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+background-color: #15803d;     
+}
+
+
 body{
 background-image: url(/imagenes/Portada.jpg);
 background-size: cover;

@@ -1,0 +1,14 @@
+
+    body { 
+        font-family: sans-serif; 
+        padding: 20px; 
+        background: #f9f9f9; 
+    }
+    .producto { 
+        border: 1px solid #ccc; 
+        padding: 16px; 
+        border-radius: 8px; 
+        background: white; 
+        margin-bottom: 12px; 
+    }
+  
